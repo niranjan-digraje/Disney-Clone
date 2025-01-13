@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import logo from "../assets/Images/logo.png";
+import logo from "./../assets/Images/logo.png";
 import {
   HiHome,
   HiMagnifyingGlass,
@@ -40,7 +40,7 @@ function Header() {
   return (
     <div className="flex items-center justify-between p-5">
       <div className="flex  gap-8 items-center">
-        <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_256/v1656431456/web-images/logo-d-plus.svg" className="w-[80px] md:w-[115px] object-cover"/>
+        <img src={logo} className="w-[80px] md:w-[115px] object-cover"/>
         <div className="hidden md:flex gap-8">
           {menu.map((item) => (
             <HeaderItem name={item.name} Icon={item.icon} />
